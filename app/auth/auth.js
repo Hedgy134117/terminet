@@ -10,7 +10,7 @@ const login = async (username, password, errorField) => {
         },
         credentials: 'include',
     };
-    fetch('http://127.0.0.1:8000/auth/login/', fetchData)
+    fetch('https://hedgy1.pythonanywhere.com/auth/login/', fetchData)
         .then(response => response.json())
         .then(data => responseData = data)
         .catch(error => responseData = error)
@@ -47,7 +47,7 @@ const register = async (username, password, playerType, errorField) => {
             'playerType': playerType,
         })
     };
-    fetch('http://127.0.0.1:8000/auth/users/', fetchData)
+    fetch('https://hedgy1.pythonanywhere.com/auth/users/', fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();

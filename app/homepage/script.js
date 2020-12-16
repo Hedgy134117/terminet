@@ -11,7 +11,7 @@ const loadDms = () => {
             'Content-Type': 'application/json',
         },
     }
-    fetch(`http://127.0.0.1:8000/auth/users/`, fetchData)
+    fetch(`https://hedgy1.pythonanywhere.com/auth/users/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();
@@ -38,7 +38,7 @@ const loadCharacters = () => {
             'Content-Type': 'application/json',
         },
     };
-    fetch(`http://127.0.0.1:8000/net/${id}/characters/`, fetchData)
+    fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();
@@ -62,7 +62,7 @@ const loadCampaginCharacters = () => {
             'Content-Type': 'application/json',
         },
     };
-    fetch(`http://127.0.0.1:8000/net/${id}/campaignCharacters/`, fetchData)
+    fetch(`https://hedgy1.pythonanywhere.com/net/${id}/campaignCharacters/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();
@@ -118,7 +118,7 @@ const postCharacter = (name, dm) => {
         })
     };
     console.log(fetchData.body);
-    fetch(`http://127.0.0.1:8000/net/${id}/characters/`, fetchData)
+    fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();

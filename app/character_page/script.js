@@ -212,7 +212,7 @@ const addBox = (board, type, posX, posY, post, name, text, num, boxId) => {
                 'maxNum': type == 'nameNumberRange' ? num : null
             })
         };
-        return fetch(`http://127.0.0.1:8000/net/${id}/characters/${characterId}/boxes/`, fetchData)
+        return fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/${characterId}/boxes/`, fetchData)
             .then(response => {
                 error = !response.ok;
                 return response.json();
@@ -249,7 +249,7 @@ const editBox = (boxId, field, value) => {
     fetchData['body'][field] = value;
     fetchData['body'] = JSON.stringify(fetchData['body']);
 
-    return fetch(`http://127.0.0.1:8000/net/${id}/characters/${characterId}/boxes/${boxId}/`, fetchData)
+    return fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/${characterId}/boxes/${boxId}/`, fetchData)
             .then(response => {
                 error = !response.ok;
                 return response.json();
@@ -277,7 +277,7 @@ const moveBox = (boxId, posX, posY) => {
             'positionY': posY,
         })
     };
-    return fetch(`http://127.0.0.1:8000/net/${id}/characters/${characterId}/boxes/${boxId}/`, fetchData)
+    return fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/${characterId}/boxes/${boxId}/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();
@@ -301,7 +301,7 @@ const delBox = (boxId) => {
         },
         credentials: 'include',
     };
-    return fetch(`http://127.0.0.1:8000/net/${id}/characters/${characterId}/boxes/${boxId}/`, fetchData)
+    return fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/${characterId}/boxes/${boxId}/`, fetchData)
         .then(response => {
             error = !response.ok;
         })
@@ -333,7 +333,7 @@ const loadCharacter = () => {
             'Content-Type': 'application/json',
         },
     };
-    return fetch(`http://127.0.0.1:8000/net/${id}/characters/`, fetchData)
+    return fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();
@@ -361,7 +361,7 @@ const loadBoxes = () => {
             'Content-Type': 'application/json',
         },
     };
-    return fetch(`http://127.0.0.1:8000/net/${id}/characters/${characterId}/boxes/`, fetchData)
+    return fetch(`https://hedgy1.pythonanywhere.com/net/${id}/characters/${characterId}/boxes/`, fetchData)
         .then(response => {
             error = !response.ok;
             return response.json();
