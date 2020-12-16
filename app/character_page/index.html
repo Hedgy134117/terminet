@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Character</title>
+    <link rel="stylesheet" href="character.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="board">
+    </div>
+
+    <!-- <div class="save-update">
+        <button class="add__button add__button--save">Save</button>
+    </div> -->
+
+    <div class="add">
+        <button class="add__button add__button--main">+</button>
+        <select name="box-type" class="add__list" id="boxType">
+            <option value="name">Name</option>
+            <option value="text">Text</option>
+            <option value="nameNumber">Name & Number</option>
+            <option value="nameNumberInf">Name & Number Calculator</option>
+            <option value="nameNumberRange">Name & Number Calculator w/range</option>
+            <option value="nameDice">Name & Dice</option>
+            <option value="nameShortDesc">Name & Short Description</option>
+            <option value="nameLongDesc">Name & Long Description</option>
+        </select>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

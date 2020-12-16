@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+body { font-family: 'PT Mono', monospace !important;  }
+.draggable { touch-action: none; }
+.board__box {
+    background-color: #0784b5;
+    display: inline-block;
+    position: absolute;
+    padding: 6px;
+    border-radius: 12px;
+}
+.box__delete {
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+.textfield {
+    margin: 6px;
+    padding: 6px;
+    color: black;
+    background-color: white;
+}
+.textfield--double {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    justify-items: center;
+    align-items: center;
+}
+.textfield--bold { font-weight: 700; }
+.textfield--large {
+    min-width: 400px;
+    max-width: 400px;
+    overflow-x: auto;
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+.textfield--huge {
+    min-width: 500px;
+    max-width: 500px;
+    overflow-x: auto;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.add__button--main {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.add__list {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+.add__button--save {
+    padding: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}

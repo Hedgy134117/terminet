@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup / Login</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <p>Register</p>
+        <div class="auth-form auth-form--register">
+            <span class="auth-form__error"></span>
+            <label>Username</label>
+            <input type="text" class="auth-user">
+            <label>Password</label>
+            <input type="password" class="auth-pass">
+            <label>Account Type</label>
+            <select class="auth-type">
+                <option value="dm">Dungeon Master</option>
+                <option value="player">Player</option>
+            </select>
+            <input type="submit" value="Submit" id="register">
+        </div>
+    </div>
+    <p class="divider">or</p>
+    <div class="auth-container">
+        <p>Login</p>
+        <div class="auth-form auth-form--login">
+            <span class="auth-form__error"></span>
+            <label>Username</label>
+            <input type="text" class="auth-user">
+            <label>Password</label>
+            <input type="password" class="auth-pass">
+            <input type="submit" value="Submit" id="login">
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #192428;
+    color: white;
+}
+
+.add__button {
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: #0784b5;
+    font-size: 2em;
+    border-radius: 12px;
+}
+.add__button:hover { cursor: pointer; }
+.add__button:focus { outline: none; }

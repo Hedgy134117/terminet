@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited { color: white }
+p {
+    font-weight: 700;
+    text-align: center;
+}
+.list {
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0784b5;
+}
+.add__button {
+    background-color: white;
+    color: #0784b5;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
