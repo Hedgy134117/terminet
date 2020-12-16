@@ -34,7 +34,7 @@ interact('.draggable').draggable({
 });
 interact('.draggable').on('dragend', (event) => {
     let target = event.target;
-    moveBox(target.getAttribute('data-boxid'), target.getAttribute('data-x'), target.getAttribute('data-y'));
+    moveBox(target.getAttribute('data-boxid'), Math.round(target.getAttribute('data-x')), Math.round(target.getAttribute('data-y')));
 });
 
 // For calculator fields, add / subtract input value to the minimum number.
