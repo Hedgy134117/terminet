@@ -135,6 +135,6 @@ STATIC_URL = '/static/'
 # CORS
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:5500',
-    'https://hedgy134117.github.io/',
+    'https://hedgy134117.github.io',
 ]
 CORS_ALLOW_CREDENTIALS = True
